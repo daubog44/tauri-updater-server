@@ -1,3 +1,5 @@
+import { defineEventHandler } from "#imports";
+
 async function downloadFile(url: string) {
     const res = await fetch(url);
     const data = await res.blob();
